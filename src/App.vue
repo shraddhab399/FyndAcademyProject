@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NAvBAr/>
+    <homePage/>
+  <aboutPage/>
+   <packagePlaces/>
+  <!-- <heaDer/> -->
+   <reviewsCust/>
+    <bookingForm/>
+    <FooTer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import NAvBAr from './components/NAvBAr.vue'
+ import homePage from './components/homePage.vue'
+ import aboutPage from './components/aboutPage.vue'
+//  import heaDer from './components/heaDer.vue'
+ import packagePlaces from './components/packagePlaces.vue'
+ import reviewsCust from './components/reviewsCust.vue'
+ import bookingForm from './components/bookingForm.vue'
+ import FooTer from './components/FooTer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NAvBAr,
+    homePage,
+    aboutPage,
+    packagePlaces,
+    // heaDer,
+    reviewsCust,
+    bookingForm,
+    FooTer
+
+    
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
